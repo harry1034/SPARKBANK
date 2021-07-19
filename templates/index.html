@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Spark Bank</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{{url_for('static', filename= 'css/styles.css')}}" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="/">Spark Bank</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/">Home</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/About2">About</a></li>
+              
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/contact">Contact</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle px-lg-3 py-3 py-lg-4" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Functions
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="/user/">Customers</a></li>
+                              <li><a class="dropdown-item" href="/transactions">Transactions</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="/adduser">Add User</a></li>
+                            </ul>
+                          </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('{{url_for('static', filename= 'a1.jpg')}}')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="site-heading">
+                            <h1>Spark Bank</h1>
+                            <span class="subheading">We Keep Your Money safe and sound</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Main Content-->
+        <div class="container px-4 px-lg-5">
+          <div class="row gx-4 gx-lg-5 justify-content-center">
+              <div class="col-md-10 col-lg-8 col-xl-7">
+                  <!-- Post preview-->
+                  <div class="post-preview" >
+                      <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjykM_xuO7xAhUQ6XMBHbp2DcgQmhMwL3oECCgQAg&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FConor_McGregor&usg=AOvVaw3b00-PAjd8mPa1dQwdiO7w">
+                          <h2 class="post-title">"I have an unhealthy obsession with Spending Money"</h2>
+                          <h3 class="post-subtitle">And a healthy Obesseion of Making it</h3>
+                      </a>
+                      <p class="post-meta">
+                          -
+                          <a href="#!">The Notorious Conor Mcgregor</a>
+                          on july 10, 2021
+                          <img src="{{url_for('static', filename='conor.jpg')}}" width="500" height="300"  />
+                      </p>
+                  </div>
+                  <!-- Divider-->
+                  <hr class="my-4" />
+                  <!-- Post preview-->
+                  <div class="post-preview">
+                      <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiPweSYue7xAhXj7XMBHdjFC0QQFjAAegQIBBAD&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FWarren_Buffett&usg=AOvVaw2Z5xGyyjbMqiQA_f392sD9"><h2 class="post-title">"if u don't find a way to make money while u sleep"</h2>
+                        <h3>You will work until you die</h3>
+                    </a>
+                      <p class="post-meta">
+                          -
+                          <a href="#!">Warren Buffet</a>
+                          on September 18, 2021
+                          <img src="{{url_for('static', filename='Warren.jpg')}}" width="500" height="300"  />
+                      </p>
+                  </div>
+                  <div class="post-preview">
+                    <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwidmLDNue7xAhXyjeYKHfT1DDAQFjABegQIBRAD&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FEarl_Wilson_(baseball)&usg=AOvVaw0ascP1HVjMB-cUpOIn675N"><h2 class="post-title">"Money in the bank is like toothpaste in a tube"</h2>
+                      <h3>Easy to take out, hard to put back</h3>
+                  </a>
+                    <p class="post-meta">
+                        -
+                        <a href="#!">Earl Wilson</a>
+                       
+                        <img src="{{url_for('static', filename='Late.jpg')}}" width="450" height="400"  />
+                    </p>
+                </div>
+                <div class="post-preview">
+                    <a href="/"><h2 class="post-title">"Never Spend your Money before you have earned it"</h2>
+                  </a>
+                    <p class="post-meta">
+                        -
+                        <a href="#!">Thomas Jefferson</a>
+                        <img src="{{url_for('static', filename='Thomas.jpg')}}" width="500" height="500"  />
+                    </p>
+                </div>
+                
+                  
+      
+      
+        <!-- Footer-->
+        <footer class="border-top">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <ul class="list-inline text-center">
+                            <li class="list-inline-item">
+                                <a href="{{params['tw_url']}}">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="{{params['fb_url']}}">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="{{params['gh_url']}}">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="small text-center text-muted fst-italic">Copyright &copy; Spark Bank</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="{{url_for('static', filename= 'js/scripts.js')}}"></script>
+    </body>
+</html>
