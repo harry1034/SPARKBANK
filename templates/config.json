@@ -4,9 +4,9 @@
         "local_server":"True",
         "local_uri":"mysql://root:@localhost/Harry",
         "prod_uri":"mysql://root:@localhost/Harry",
-        "fb_url":"https://facebook.com/Ritul Yadav",
-        "tw_url":"https://twitter.com/Harry",
-        "gh_url":"https://github.com/harry1034",
+        "fb_url":"https://facebook.com/your facebook id",
+        "tw_url":"https://twitter.com/your twitter handle",
+        "gh_url":"https://github.com/your github id",
         "gmail-user":"your_email@gmail.com",
         "gmail-password":"your password"
        
